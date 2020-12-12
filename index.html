@@ -1,0 +1,149 @@
+Dog Years
+Sagar Gupta
+•
+26 Nov
+100 points
+Due 26 Nov, 19:30
+
+Dogs mature at a faster rate than human beings. We often say a dog’s age can be calculated in “dog years” to account for their growth compared to a human of the same age. In some ways we could say, time moves quickly for dogs — 8 years in a human’s life equates to 45 years in a dog’s life. How old would you be if you were a dog?
+
+Here’s how you convert your age from “human years” to “dog years”:
+
+The first two years of a dog’s life count as 10.5 dog years each.
+Each year following equates to 4 dog years.
+Before you start doing the math in your head, let a computer take care of it! With your knowledge of math operators and variables, use JavaScript to convert your human age into dog years.
+Class comments
+
+Your work
+Handed in
+
+dog.html
+HTML
+
+screencapture-file-home-cedcoss-Desktop-dog-html-2020-11-26-19_25_38.png
+Image
+Private comments
+
+Dog YearsHanding in…
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+
+
+	<style>
+		.class1
+		{
+			
+			padding-top: 20px;
+			
+			
+			
+		}
+	*{
+    font-family: 'ABeeZee';font-size: 22px;
+}
+		
+
+
+			.heading
+			{
+				background-image: url('dog.gif');
+				height: 300px;
+				width: 180px;
+				margin-left: 400px;
+				padding-right: 400px;
+				text-align: center;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+
+			.heading h2
+			{
+				font-style: normal;
+				font-weight: 600;
+				color: red;
+				font-size: 30px;
+				
+			
+				
+			}
+	</style>
+</head>
+<body>
+	<div class="container" style="height: auto;width: 100%;text-align: center;margin-top: 100px; ">
+		<h2>HumanYearToDogYeArConVerTer</h2>
+	<div class="container heading " style="border:10px solid brown;"> <h2>hey!don't skip...<br>  you have opportuiny!!!!!!  To calculate yourself in me!!&#128512;</h2></div>
+	
+
+	<div style="margin-top: -250px;margin-left: 200px;">
+		
+		<input type="number" name="" placeholder="human year" id="age"><br><br>
+	    <input type="text" name="" placeholder="dog years" id="input1"><br><br>
+	    <input type="submit"  onclick="humanyear()" value="SeeUinDog " style="background-image: url('dogs.jpg');width:200px;height:60px;border:none;box-shadow: 5px 2px 5px 2px;color: white; darkgreen;"><br><br>
+	</div>
+    </div>
+
+	<script>
+	
+		function humanyear()
+		{
+
+		   var x=document.getElementById('age').value;
+
+		   if(x<1)
+		   {
+		   	alert('sorry age must be positive')
+		   }
+
+
+		   else if(x<22)
+		   {
+		   	debugger;
+		   	humany=parseFloat((10/105)*x)
+		   	console.log(humany);
+		   	ytmc(humany);
+		   	 alert('Haha you are '+ year+'years'+month+'months' +' dog years'+'😀');
+		   
+		   	
+		   	 
+		   }
+
+
+		   else
+		   {
+		   	debugger;
+
+
+		   	var humany2=parseFloat(parseFloat((x-21)/4)+2);
+		   	console.log(humany2);
+		   	//document.getElementById('input1').value=humany2;
+		  
+            ytmc(humany2);
+            	alert('Hehe you are still pub..can\'t believe ??...see result'+'😀');
+		
+
+
+		   }
+		}
+
+
+      function ytmc(x)
+      {
+      	yr=(x*10)%10;
+      	console.log(yr)
+      	month=parseInt(yr*1.2);
+        year=parseInt(x-yr/10);
+       
+        	document.getElementById('input1').value = year +'year' + month +'month';
+        
+      }
+
+
+	</script>
+
+</body>
+</html>
